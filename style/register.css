@@ -1,0 +1,245 @@
+/*
+* 注册页面样式
+*/
+
+/*公用*/
+body {
+    background-color: #f5f5f5;
+}
+.comwidth {
+    width: 750px;
+    margin: 0 auto;
+}
+
+
+/*header*/
+.header {
+    display: block;
+    overflow: hidden;
+    height: 29px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    background-image: -webkit-linear-gradient(bottom, #fff, #eee);
+    background-image: -moz-linear-gradient(bottom, #fff, #eee);
+    background-image: -o-linear-gradient(bottom, #fff, #eee);
+    background-image: -ms-linear-gradient(bottom, #fff, #eee);
+    color: #8e8e8e;
+}
+.header_left {
+    display: block;
+    float: left;
+    overflow: hidden;
+}
+.header_right li {
+    float: right;
+    display: block;
+    line-height: 29px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.header_right li a {
+    color: #8e8e8e;
+}
+
+
+
+
+
+/*reg_main*/
+.reg_top {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.reg_top span {
+    float: left;
+    margin-top: 15px;
+}
+.reg_top img {
+    height: 50px;
+}
+.reg_top h1 {
+    line-height: 50px;
+    border-left: 1px solid #ddd;
+    margin-left: 15px;
+    padding-left: 15px;
+    font-family: serif;
+}
+.reg_wrap {
+    display: block;
+    width: 750px;
+    height: 480px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px #DDD;
+    -moz-box-shadow: 0 0 10px #DDD;
+    -webkit-box-shadow: 0 0 10px #DDD;
+}
+.reg_wrap .reg_menu {
+    margin: 20px 115px;
+    border-bottom: 1px solid #ddd;
+}
+.reg_wrap .reg_menu li {
+    float: left;
+    font-size: 25px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    line-height: 54px;
+    height: 54px;
+    width: 259px;
+    text-align: center;
+    cursor: pointer;
+}
+.reg_wrap .reg_menu .email_menu {
+    border-right: 1px solid #ddd;
+}
+.reg_wrap .reg_menu .selected {
+    border-bottom: 4px solid #ff1427;
+}
+.reg_wrap .reg_box {
+    width: 520px;
+    margin: 0 auto;
+    color: #8e8e8e;
+}
+.reg_box li {
+    width: 343px;
+    height: 54px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    margin-bottom: -1px;
+    position: relative;
+}
+.reg_box .reg_txtbox .lab_name, .verify_val .lab_name {
+    display: inline-block;
+    width: 90px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+}
+.reg_box .reg_txtbox img {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 39px;
+}
+.reg_box .reg_txtbox .img_phone {
+    position: absolute;
+    z-index: 3;
+    top: 22px;
+    right: 44px;
+}
+.reg_box .reg_txtbox input {
+    width: 210px;
+    height: 28px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    color: #bbb;
+    position: relative;
+    z-index: 2;
+    padding-left: 5px;
+    background: transparent;
+}
+.reg_box .reg_txtbox .lab_note {
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    left: 100px;
+    background-color: #fff;
+    font-family: "Microsoft Yahei", "微软雅黑";
+}
+.reg_txtbox .formtips {
+    position: absolute;
+    top: 0;
+    right: -210px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fffceb;
+}
+.reg_box .reg_verifycode {
+    width: 344px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.reg_box .reg_verifycode .verify_val {
+    width: 153px;
+    height: 53px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    float: left;
+}
+.reg_verifycode .verify_val input[type="text"]{
+    height: 28px;
+    width: 38px;
+    padding-left: 5px;
+}
+.reg_box .reg_verifycode .verify_img {
+    width: 123px;
+    height: 53px;
+    border: 1px solid #ddd;
+    float: left;
+}
+.reg_box .reg_verifycode .change_code {
+    float: right;
+    color: #ffb400;
+    line-height: 55px;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    cursor: pointer;
+}
+.reg_box .agreement input {
+    margin-top: 10px;
+    margin-left: 87px;
+}
+.reg_box .agreement a {
+    color: #ff1427;
+}
+.reg_box .agreement a:hover {
+    color: #ffb400;
+}
+.reg_box input[type="submit"] {
+    width: 345px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 87px;
+    background-color: #ffb400;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fafafa;
+    font-family: "Microsoft Yahei", "微软雅黑";
+}
+.reg_wrap .phone {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.footer_links {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer_links a {
+    color: #8e8e8e;
+    margin: 0 5px;
+}
+.copyright {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8e8e8e;
+}

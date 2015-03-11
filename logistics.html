@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html charset=utf-8">
+    <title>物流查询 物流排行 - XX商场</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="style/logistics.css" type="text/css"/>
+</head>
+<body>
+<div class="header">
+    <div class="header_top">
+        <div class="comwidth">
+            <div class="header_left">
+                <img src="#" alt="logo"/>Hi，欢迎来到XX商城！
+            </div>
+            <ul class="header_right">
+                <li><a href="#">帮助</a></li>
+                <li><a href="#">物流信息</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="register.html" target="_blank">[免费注册]</a></li>
+                <li><a href="login.html" target="_blank">[请登录]</a></li>
+            </ul>
+        </div>
+    </div><!--END HEAD_TOP-->
+    <div class="header_bottom comwidth">
+        <div class="logo">
+            <span>
+                <img src="#" alt="logo"/>
+            </span>
+        </div>
+        <div class="search">
+            <form target="_blank" method="get">
+                <input type="text"/>
+                <input type="submit" value="搜索" />
+            </form>
+        </div>
+        <div id="user" class="user">
+            <div id="userText" class="user_text">
+                <img src="./image/icon/user_24.png" alt="user"/>
+                <a href="#">我的XX</a>
+                <span class="angle down"></span>
+            </div>
+            <div id="userList" class="user_list">
+                <ul>
+                    <li><a href="home.html">我的账户</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">评价商品</a></li>
+                    <li><a href="#">会员专区</a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="script/userList.js"></script>
+
+        <div class="cart">
+            <div class="shop_text">
+                <img src="./image/icon/cart_24.png" alt="cart"/>
+                <a href="cart.html">购物车</a>
+                <span class="angle down"></span>
+            </div>
+            <div class="shop_num">0</div>
+            <div id="cartList" class="cart_list">
+                <div class="cart_goods">
+                    <div class="cart_title">
+                        <h4>最新加入的商品</h4>
+                    </div>
+                    <div class="cart_content">
+                        <ul>
+                            <li>
+                                <div class="fl p_img">
+                                    <a href="AppleMD760CH.html" target="_blank"><img src="image/products/notebook/Macbook.jpg" height="50" width="50"/></a>
+                                </div>
+                                <div class="fl p_name">
+                                    <a href="AppleMD760CH.html" title="OReilly精品图书系列：JavaScript权威指南（第6版）" target="_blank">OReilly精品图书系列：JavaScript权威指南（第6版）</a>
+                                </div>
+                                <div class="fr p_detail">
+                                <span class="p_price">
+                                    <strong>￥6299.00</strong>x1
+                                </span>
+                                    <a class="delete"  href="#">删除</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart_submit clearfix">
+                    <span class="fl submit_text">
+                        共<em>1</em>件商品 共计<strong>6299.00</strong>元
+                    </span>
+                        <a href="cart.html" title="去购物车结算" class="fr submit_pay">去购物车结算</a>
+                    </div>
+                </div>
+                <div class="cart_empty">
+                <span class="nogoods">
+                    <img src="image/icon/cart_empty_48.png"/>
+                    购物车中还没有商品，赶紧选购吧！
+                </span>
+                </div>
+            </div>
+        </div>
+    </div><!--END CART-->
+    <script type="text/javascript" src="script/cartList.js"></script>
+
+    <div class="cat_list comwidth clearfix">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">相机/DV</a></li>
+            <li><a href="#">DIV硬件</a></li>
+            <li><a href="#">数码家电</a></li>
+            <li><a href="#">网络设备</a></li>
+            <li><a href="#">办公设备</a></li>
+        </ul>
+    </div>
+</div><!--END HEADER-->
+<div class="main">
+    <div class="content_top">
+        <div class="paiming_title">
+            <ul>
+                <li>月度之星</li>
+                <li>季度之星</li>
+                <li>年度之星</li>
+            </ul>
+        </div>
+        <div class="paiming">
+            <div class="month_star">
+                <ul>
+                    <li>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="season_star"></div>
+            <div class="year_star"></div>
+        </div>
+    </div><!--END CONTENT_TOP-->
+    <div class="content_bottom"></div><!--END CONTENT_BOTTOM-->
+</div><!--END MAIN-->
+<div class="footer comwidth">
+    <div class="footer_content">
+        <dl>
+            <dt>了解我们</dt>
+            <dd>
+                <div><a href="#">人才招聘</a></div>
+                <div><a href="#">关于我们</a></div>
+                <div><a href="#">新闻中心</a></div>
+                <div><a href="#">移动终端</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>购物资讯</dt>
+            <dd>
+                <div><a href="#">热门商品</a></div>
+                <div><a href="#">热门促销</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>支付方式</dt>
+            <dd>
+                <div><a href="#">XX支付</a></div>
+                <div><a href="#">XX账户</a></div>
+                <div><a href="#">支付宝与财付通</a></div>
+                <div><a href="#">网上银行</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>物流信息</dt>
+            <dd>
+                <div><a href="#">物流公司</a></div>
+                <div><a href="#">物流费用</a></div>
+                <div><a href="#">物流排行</a></div>
+                <div><a href="#">物流评分</a></div>
+                <div><a href="#">物流投诉</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>帮助和购物指南</dt>
+            <dd>
+                <div><a href="#">订单查询</a></div>
+                <div><a href="#">在线退换货</a></div>
+                <div><a href="#">退货政策</a></div>
+                <div><a href="#">帮助</a></div>
+            </dd>
+        </dl>
+    </div>
+    <div class="footer_links">
+        <a href="#">联系我们</a>|
+        <a href="#">人才招聘</a>|
+        <a href="#">商家入驻</a>|
+        <a href="#">营销中心</a>|
+        <a href="#">手机XX</a>|
+        <a href="#">友情链接</a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2014-2015  XX xx.com 版权所有</p>
+    </div>
+</div><!--END FOOTER-->
+</body>
+</html>
