@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>XX-网上购物商城：XX，您购物的首选</title>
+    <link rel="stylesheet" href="style/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="./style/main.css" type="text/css"/>
+<!--<script type="text/javascript">
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            /*如果onload事件不是一个function，即还未绑定事件*/
+            if(typeof window.onload != "function") {
+                window.onload = func;
+            }
+            /*如果是一个function，即已经绑定了事件*/
+            else {
+                window.onload = function() {
+                    oldonload();            //把已经添加的函数加到onload中
+                    func();                 //把新的函数加到onload中去
+                }
+            }
+        }
+    </script>-->
+</head>
+<body>
+<div class="header">
+    <div class="header_top">
+        <div class="comwidth">
+            <div class="header_left">
+                <img src="#" alt="logo"/>
+                <span>Hi，欢迎来到XX商城！</span>
+            </div>
+            <ul class="header_right">
+                <li><a href="#">帮助</a></li>
+                <li><a href="#">物流信息</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="register.html" target="_blank">[免费注册]</a></li>
+                <li><a href="login.html" target="_blank">[请登录]</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_bottom comwidth">
+        <div class="category clearfix">
+            <span>
+                <a href="#">全部商品分类</a>
+            </span>
+            <span class="angle down"></span>
+        </div>
+        <div class="search">
+            <form target="_blank" method="get">
+                <input type="text"/>
+                <input type="submit" value="搜索" />
+            </form>
+        </div>
+        <div id="user" class="user">
+            <div id="userText" class="user_text">
+                <img src="./image/icon/user_24.png" alt="user"/>
+                <a href="#">我的XX</a>
+                <span class="angle down"></span>
+            </div>
+            <div id="userList" class="user_list">
+                    <ul>
+                        <li><a href="myOrder.html">我的账户</a></li>
+                        <li><a href="#">我的订单</a></li>
+                        <li><a href="#">评价商品</a></li>
+                        <li><a href="#">会员专区</a></li>
+                    </ul>
+            </div>
+        </div>
+        <!--购物车-->
+        <div id="cart" class="cart clearfix">
+            <div class="shop_text">
+                <img src="./image/icon/cart_24.png" alt="cart"/>
+                <a href="cart.html">购物车</a>
+                <span class="angle down"></span>
+            </div>
+            <div class="shop_num">0</div>
+            <div id="cartList" class="cart_list">
+                <div class="cart_goods">
+                    <div class="cart_title">
+                        <h4>最新加入的商品</h4>
+                    </div>
+                    <div class="cart_content">
+                        <ul>
+                            <li>
+                                <div class="fl p_img">
+                                    <a href="AppleMD760CH.html" target="_blank"><img src="image/products/notebook/Macbook.jpg" height="50" width="50"/></a>
+                                </div>
+                                <div class="fl p_name">
+                                    <a href="AppleMD760CH.html" title="OReilly精品图书系列：JavaScript权威指南（第6版）" target="_blank">OReilly精品图书系列：JavaScript权威指南（第6版）</a>
+                                </div>
+                                <div class="fr p_detail">
+                                    <span class="p_price">
+                                        <strong>￥6299.00</strong>x1
+                                    </span>
+                                    <a class="delete"  href="#">删除</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart_submit clearfix">
+                        <span class="fl submit_text">
+                            共<em>1</em>件商品 共计<strong>6299.00</strong>元
+                        </span>
+                        <a href="cart.html" title="去购物车结算" class="fr submit_pay">去购物车结算</a>
+                    </div>
+                </div>
+                <div class="cart_empty">
+                    <span class="nogoods">
+                        <img src="image/icon/cart_empty_48.png"/>
+                        购物车中还没有商品，赶紧选购吧！
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div><!--END CONTENT_TOP-->
+</div><!--END HEADER-->
+
+<div class="content comwidth">
+    <div class="content_main clearfix">
+        <div id="catLeft" class="cat_left">
+            <ul>
+                <li>
+                    <!--<img src="image/icon/notebook_32.png"/>-->
+                    <s class="s1"></s>
+                    <a href="notebook.html" target="_blank">笔记本</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>热门笔记本</dt>
+                                <dd>
+                                    <a href="#">联想Y430p</a> <a href="#">联想Y40</a> <a href="#">联想Yoga3 Pro</a> <a href="#">新MacBook Air</a> <a href="#">华硕FX50</a> <a href="#">Surface Pro 3</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门国外品牌</dt>
+                                <dd>
+                                    <a href="#">Apple</a> <a href="#">Dell</a> <a href="#">HP</a> <a href="#">Samsung</a> <a href="#">Sony</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门国内品牌</dt>
+                                <dd>
+                                    <a href="#">联想</a> <a href="#">华硕</a> <a href="#">宏碁</a> <a href="#">联想ThinkPad</a> <a href="#">雷神</a><a href="#">神舟</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">笔记本</a></dt>
+                                <dd>
+                                    <a href="#">游戏本</a> <a href="#">商务本</a> <a href="#">学生本</a> <a href="#">平板笔记本</a> <a href="#">Ultrabook(超极本)</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>电脑整机</dt>
+                                <dd>
+                                    <a href="#">台式机</a> <a href="#">一体机</a> <a href="#">服务器</a> <a href="#">工作站</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>笔记本配件</dt>
+                                <dd>
+                                    <a href="#">笔记本CPU</a> <a href="#">笔记本内存</a> <a href="#">笔记本硬盘</a> <a href="#">笔记本散热器</a> <a href="#">笔记本电池</a> <a href="#">笔记本电脑包</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/pad_32.png"/>-->
+                    <s class="s2"></s>
+                    <a href="#">平板电脑</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>热门平板电脑</dt>
+                                <dd>
+                                    <a href="#">iPad Air</a> <a href="#">Air 2</a> <a href="#">iPad Mini2</a> <a href="#">iPad Mini 3</a> <a href="#">Surface 2</a>  <a href="#">谷歌Nexus 9</a> <a href="#">索尼Xperia Z3 Tablet Compact</a> <a href="#">联想ThinkPad 8</a> <a href="#">联想Yoga平板2 Pro</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门品牌</dt>
+                                <dd>
+                                    <a href="#">Apple</a> <a href="#">联想</a> <a href="#">Microsoft</a> <a href="#">Sony</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">平板电脑</a></dt>
+                                <dd>
+                                    <a href="#">苹果iPad</a> <a href="#">Android平板</a> <a href="#">Windows8平板</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">平板电脑配件</a></dt>
+                                <dd>
+                                    <a href="#">贴膜 </a> <a href="#">皮套</a> <a href="#">保护壳</a> <a href="#">平板电脑包</a> <a href="#">平板电脑支架</a> <a href="#">扩展底座</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/phone_32.png"/>-->
+                    <s class="s3"></s>
+                    <a href="#">手机</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>热门手机</dt>
+                                <dd>
+                                    <a href="#">iPhone6 Plus</a> <a href="#">iPhone6</a> <a href="#">sony Z3</a> <a href="#">三星S5</a> <a href="#">小米Note</a> <a href="#">华为荣耀6</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门国外品牌</dt>
+                                <dd>
+                                    <a href="#">Apple</a> <a href="#">sony</a> <a href="#">Samsung</a> <a href="#">Nokia</a> <a href="#">Motorola</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门国内品牌</dt>
+                                <dd>
+                                    <a href="#">HTC</a> <a href="#">小米</a> <a href="#">华为</a> <a href="#">魅族</a> <a href="#">OPPO</a><a href="#">Lenovo</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">手机</a></dt>
+                                <dd>
+                                    <a href="#">Android</a> <a href="#">苹果iOS</a> <a href="#">微软WP</a> <a href="#">电信4G</a> <a href="#">移动4G</a>  <a href="#">联通4G</a> <a href="#">双卡双待</a> <a href="#">三防手机</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>手机配件</dt>
+                                <dd>
+                                    <a href="#">手机电池</a> <a href="#">充电器</a> <a href="#">手机贴膜</a> <a href="#">手机外壳</a> <a href="#">数据线</a><a href="#">蓝牙耳机</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/camera_32.png"/>-->
+                    <s class="s4"></s>
+                    <a href="#">相机</a>
+                    <a href="#">DV</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>热门相机/DV</dt>
+                                <dd>
+                                    <a href="#">佳能5D3</a> <a href="#">佳能6D</a> <a href="#">佳能700D</a> <a href="#">佳能70D</a> <a href="#">尼康D750</a> <a href="#">尼康D610</a> <a href="#">尼康D7100</a> <a href="#">尼康D5300</a> <a href="#">索尼A6000</a> <a href="#">索尼A5100</a> <a href="#">索尼RX100 III</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>热门品牌</dt>
+                                <dd>
+                                    <a href="#">佳能</a> <a href="#">尼康</a> <a href="#">索尼</a> <a href="#">松下</a> <a href="#">富士</a> <a href="#">三星</a> <a href="#">奥林巴斯</a> <a href="#">卡西欧</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">数码相机</a></dt>
+                                <dd>
+                                    <a href="#">卡片相机</a> <a href="#">单反相机</a> <a href="#">单电/微单</a> <a href="#">长焦相机</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">数码摄像机</a></dt>
+                                <dd>
+                                    <a href="#">高清摄像机</a> <a href="#">专业摄像机</a> <a href="#">3D摄像</a> <a href="#">4K摄像</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>相机配件</dt>
+                                <dd>
+                                    <a href="#">镜头滤镜</a> <a href="#">闪光灯</a> <a href="#">三脚架</a> <a href="#">电池</a> <a href="#">充电器</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/disk_32.png"/>-->
+                    <s class="s5"></s>
+                    <a href="#">DIV硬件</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt><a href="#">CPU</a></dt>
+                                <dd>
+                                    <a href="#">Intel</a> <a href="#">AMD</a> <a href="#">双核</a> <a href="#">四核</a> <a href="#">八核</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">主板</a></dt>
+                                <dd>
+                                    <a href="#">Intel B85</a> <a href="#">Intel H87</a> <a href="#">Intel Z97</a> <a href="#">AMD 990</a> <a href="#">AMD A88X</a> <a href="#">AMD A85X</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">显卡</a></dt>
+                                <dd>
+                                    <a href="#">NVIDIA GTX750Ti</a> <a href="#">NVIDIA GTX750</a> <a href="#">NVIDIA GTX760</a> <a href="#">NVIDIA GTX770</a> <a href="#">NVIDIA GTX780Ti</a> <a href="#">NVIDIA GTX970</a> <a href="#">NVIDIA GTX980</a> <a href="#">AMD R9 260X</a> <a href="#">AMD R9 270X</a> <a href="#">AMD R9 280X</a> <a href="#">AMD R9 290X</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>装机硬件</dt>
+                                <dd>
+                                    <a href="#">内存专业显卡</a> <a href="#">硬盘</a> <a href="#">固态硬盘</a> <a href="#">散热系统</a> <a href="#">PC电源</a> <a href="#">声卡</a> <a href="#">光驱/刻录机</a> <a href="#">专业显卡</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>外设配件</dt>
+                                <dd>
+                                    <a href="#">液晶显示器</a> <a href="#">机箱</a> <a href="#">鼠标/键盘</a> <a href="#">音箱</a> <a href="#">摄像头</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/SDCard_32.png"/>-->
+                    <s class="s6"></s>
+                    <a href="#">数码产品</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>数码产品</dt>
+                                <dd>
+                                    <a href="#">移动硬盘</a> <a href="#">MP3/MP4</a> <a href="#">U盘</a> <a href="#">游戏机</a> <a href="#">数码录音笔</a> <a href="#">MP3/MP4</a> <a href="#">电子辞典</a> <a href="#">学习机</a> <a href="#">数码相框</a> <a href="#">掌上数字电视</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>数码配件</dt>
+                                <dd>
+                                    <a href="#">耳机</a> <a href="#">电视接收盒</a> <a href="#">移动电源</a> <a href="#">数码存储卡/读卡器</a> <a href="#">连接线</a> <a href="#">视频卡/压缩卡</a> <a href="#">3D眼镜</a> <a href="#">移动电源</a> <a href="#">游戏周边设备</a> <a href="#">PDA</a> <a href="#">手写绘画输入</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>智能穿戴</dt>
+                                <dd>
+                                    <a href="#">智能手表</a> <a href="#">智能腕带/手环</a> <a href="#">智能眼镜</a> <a href="#">跟踪器/记录器</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/router_32.png"/>-->
+                    <s class="s7"></s>
+                    <a href="#">网络设备</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt><a href="#">服务器</a></dt>
+                                <dd>
+                                    <a href="#">服务器</a> <a href="#">服务器CPU</a> <a href="#">服务器内存</a> <a href="#">服务器硬盘</a> <a href="#">服务器主板</a> <a href="#">服务器机箱</a> <a href="#">磁盘阵列</a> <a href="#">阵列卡</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>网络设备</dt>
+                                <dd>
+                                    <a href="#">路由器</a> <a href="#">交换机</a> <a href="#">网卡</a> <a href="#">集线器</a> <a href="#">ADSL/HDSL</a> <a href="#">布线产品</a> <a href="#">光纤设备</a> <a href="#">防火墙</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>无线设备</dt>
+                                <dd>
+                                    <a href="#">无线路由器</a> <a href="#">无线网卡</a> <a href="#">无线上网卡</a> <a href="#">无线AP</a> <a href="#">无线交换机</a> <a href="#">天馈系统</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!--<img src="image/icon/printer_32.png"/>-->
+                    <s class="s8"></s>
+                    <a href="#">办公设备</a>
+                    <span class="angle right"></span>
+                    <div class="submenu">
+                        <div class="leftdiv">
+                            <dl>
+                                <dt>办公打印</dt>
+                                <dd>
+                                    <a href="#">多功能一体机</a> <a href="#">喷墨打印机</a> <a href="#">激光打印机</a> <a href="#">照片打印机</a> <a href="#">LED打印机</a> <a href="#">针式打印机</a> <a href="#">复印复合机</a> <a href="#">大幅面打印机</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>耗材</dt>
+                                <dd>
+                                    <a href="#">碳带/色带</a> <a href="#">墨盒/墨水</a> <a href="#">硒鼓/碳粉</a> <a href="#">打印介质</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>OA产品</dt>
+                                <dd>
+                                    <a href="#">打卡机/考勤机</a> <a href="#">视频展示台</a> <a href="#">碎纸机</a> <a href="#">收款机/POS机</a> <a href="#">条码设备</a> <a href="#">标签机</a> <a href="#">塑封机</a> <a href="#">装订机</a> <a href="#">验钞机/点钞机</a> <a href="#">传真机</a> <a href="#">条形码打印机</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>投影设备</dt>
+                                <dd>
+                                    <a href="#">投影机</a> <a href="#">投影幕布</a> <a href="#">投影灯泡</a> <a href="#">投影仪</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--END CAT_LEFT-->
+
+        <div class="nav_center">
+            <div id="pic" class="pic">
+                <ul>
+                    <li style="display: block;">
+                        <a href="#"><img src="./image/ad/sale1.jpg"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/ad/sale2.jpg"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/ad/sale3.jpg"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/ad/sale4.jpg"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./image/ad/sale5.jpg"/></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="num" class="num">
+                <ul>
+                    <li class="current"><a>1</a></li>
+                    <li><a>2</a></li>
+                    <li><a>3</a></li>
+                    <li><a>4</a></li>
+                    <li><a>5</a></li>
+                </ul>
+            </div>
+        </div><!--END NAV_CENTER-->
+
+        <div class="nav_right">
+            <div class="logistics_top"><a target="_blank" href="logistics.html">物流排行榜</a></div>
+            <div class="logistics_main">
+                <dl class="month">
+                    <dt>月物流之星</dt>
+                    <dd>1. <img src="image/logo/sf.jpg" alt="SF"/><a href="#">顺丰物流</a></dd>
+                    <dd>2. <img src="image/logo/yto.jpg" alt="YTO"/><a href="#">圆通物流</a></dd>
+                    <dd>3. <img src="image/logo/db.jpg" alt="DB"/><a href="#">德邦物流</a></dd>
+                </dl>
+                <dl class="year">
+                    <dt>年度物流之星</dt>
+                    <dd>1. <img src="image/logo/sf.jpg" alt="SF"/><a href="#">顺丰物流</a></dd>
+                    <dd>2. <img src="image/logo/yto.jpg" alt="YTO"/><a href="#">圆通物流</a></dd>
+                    <dd>3. <img src="image/logo/zto.jpg" alt="ZTO"/><a href="#">中通物流</a></dd>
+                    <dd>4. <img src="image/logo/db.jpg" alt="DB"/><a href="#">德邦物流</a></dd>
+                    <dd>5. <img src="image/logo/ems.jpg" alt="EMS"/><a href="#">EMS物流</a></dd>
+                </dl>
+            </div>
+        </div><!--END NAV_RIGHT-->
+        <div class="content_recomm">
+            <div class="recomm_title">
+                <h2>生活优选</h2><h3>精彩每一天</h3>
+            </div>
+            <div class="recomm_goods">
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">笔记本</a></dt>
+                            <dd><a href="#">联想Y50</a></dd>
+                            <dd><a href="#">华硕FX50</a></dd>
+                            <dd><a href="#">MacBook Air</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/notebook.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">平板电脑</a></dt>
+                            <dd><a href="#">iPad Air2</a></dd>
+                            <dd><a href="#">Mini 2</a></dd>
+                            <dd><a href="#">Mini 3</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/iPad.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">相机摄影</a></dt>
+                            <dd><a href="#">佳能70D</a></dd>
+                            <dd><a href="#">尼康D750</a></dd>
+                            <dd><a href="#">富士Mini 25</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/camera.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">手机数码</a></dt>
+                            <dd><a href="#">iPhone6</a></dd>
+                            <dd><a href="#">Sony Z3</a></dd>
+                            <dd><a href="">小米Note</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/mobilephonesale.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">DIV硬件</a></dt>
+                            <dd><a href="#">intel Core i7 4790K</a></dd>
+                            <dd><a href="#">罗技G700</a></dd>
+                            <dd><a href="#">NVIDIA GeForce GTX650Ti</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/disk.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">数码产品</a></dt>
+                            <dd><a href="#">索尼XBA-H3</a></dd>
+                            <dd><a href="#">三星GALAXY Gear S</a></dd>
+                            <dd><a href="#">苹果nano7</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/erji.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">网络设备</a></dt>
+                            <dd><a href="#">魔豆路由器</a></dd>
+                            <dd><a href="#">百度小度WiFi</a></dd>
+                            <dd><a href="#">华为荣耀立方</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/baidu_wifi.jpg"/></a>
+                </div>
+                <div>
+                    <div class="wrap_left">
+                        <a class="s_link" href="#"></a>
+                        <dl>
+                            <dt><a href="#">办公设备</a></dt>
+                            <dd><a href="#">惠普M276n</a></dd>
+                            <dd><a href="#">富士趣奇俏</a></dd>
+                            <dd><a href="#">松下PT-X351C</a></dd>
+                        </dl>
+                    </div>
+                    <a href="#"><img src="./image/ad/printer.jpg"/></a>
+                </div>
+            </div>
+        </div>
+    </div><!--END CONTENT_MAIN-->
+
+</div><!--END CONTENT-->
+
+<div class="footer comwidth">
+    <div class="footer_content">
+        <dl>
+            <dt>了解我们</dt>
+            <dd>
+                <div><a href="#">人才招聘</a></div>
+                <div><a href="#">关于我们</a></div>
+                <div><a href="#">新闻中心</a></div>
+                <div><a href="#">移动终端</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>购物资讯</dt>
+            <dd>
+                <div><a href="#">热门商品</a></div>
+                <div><a href="#">热门促销</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>支付方式</dt>
+            <dd>
+                <div><a href="#">XX支付</a></div>
+                <div><a href="#">XX账户</a></div>
+                <div><a href="#">支付宝与财付通</a></div>
+                <div><a href="#">网上银行</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>物流信息</dt>
+            <dd>
+                <div><a href="#">物流公司</a></div>
+                <div><a href="#">物流费用</a></div>
+                <div><a href="#">物流排行</a></div>
+                <div><a href="#">物流评分</a></div>
+                <div><a href="#">物流投诉</a></div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>帮助和购物指南</dt>
+            <dd>
+                <div><a href="#">订单查询</a></div>
+                <div><a href="#">在线退换货</a></div>
+                <div><a href="#">退货政策</a></div>
+                <div><a href="#">帮助</a></div>
+            </dd>
+        </dl>
+    </div>
+    <div class="footer_links">
+        <a href="#">联系我们</a>|
+        <a href="#">人才招聘</a>|
+        <a href="#">商家入驻</a>|
+        <a href="#">营销中心</a>|
+        <a href="#">手机XX</a>|
+        <a href="#">友情链接</a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2014-2015  XX xx.com 版权所有</p>
+    </div>
+</div><!--END FOOTER-->
+<!--
+<script src="./library/jquery-2.1.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="script/cartList.js"></script>
+<script type="text/javascript" src="script/userList.js"></script>
+<script type="text/javascript" src="./script/category.js"></script>
+<script type="text/javascript" src="./script/advert.js"></script>
+-->
+<script type="text/javascript" src="./script/index.js"></script>
+</body>
+</html>

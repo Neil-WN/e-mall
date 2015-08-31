@@ -1,0 +1,8 @@
+﻿camera_32.png, 32, 32, 0, 0
+disk_32.png, 32, 32, 34, 0
+notebook_32.png, 32, 32, 68, 0
+phone_32.png, 32, 32, 102, 0
+printer_32.png, 32, 32, 136, 0
+router_32.png, 32, 32, 170, 0
+SDCard_32.png, 32, 32, 204, 0
+pad_32.png, 39, 31, 238, 0
